@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Document sans nom</title>
+<link rel="stylesheet" href="mesStyles.css">
+<script src="mescontroles.js"></script>
+</head>
+
+<body><fieldset>
+  <legend>Inscription</legend>
+  <form action="inscription.php" method="post" onsubmit="return inscription()" >
+    
+      <label class="label">Nom : </label>
+        <input type="text" name="nom" id="nom"/>
+      <br>
+    
+  
+     <label class="label">Adresse email : </label>
+        <input type="email" name="mail" id="mail" /><br>
+     
+   
+  
+      <label class="label">Date de naissance : </label>
+        <input type="date" name="datn" id="datn" /><br>
+      
+   
+      <label class="label">
+        Genre :</label>
+        <input type="radio" name="radio" id="mas" value="H" />
+        masculin
+      
+        <input type="radio" name="radio" id="fem" value="F"/>
+        Féminin<br>
+      <label class="label">Mot de passe :</label>
+        <input type="password" name="mdp" id="mdp" /><br>
+      
+  
+      <label class="label">Retaper le Mot de passe :</label>
+        <input type="password" name="rmdp" id="rmdp" /><br>
+      
+   
+      <label class="label">&nbsp;</label>
+        <input type="reset" name="bt" id="bt" value="Annuler" />
+      
+      <input type="submit" name="bt2" id="bt2" value="Enregistrer" />
+   
+  </form>
+</fieldset>
+</body>
+</html>
